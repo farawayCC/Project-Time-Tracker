@@ -25,6 +25,8 @@ function createWindow() {
       : `file://${path.join(__dirname, "../build/index.html")}`
   );
   mainWindow.on("closed", () => (mainWindow = null));
+
+  mainWindow.menuBarVisible = false
 }
 
 app.setAppUserModelId("Your app name")
