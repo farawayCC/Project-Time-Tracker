@@ -16,7 +16,7 @@ const TopBar = () => {
     const startNewWeek = () => {
         for (let index = 0; index < pomos.length; index++) {
             dispatch(setNull(index))
-            
+
         }
     }
     const getSum = () => {
@@ -42,9 +42,11 @@ const TopBar = () => {
                 </Header>
 
                 <Button.Group floated='right' style={{ marginRight: '4%' }}>
-                    <Button style={{ marginRight: '20px' }}onClick={startNewWeek} compact>
+                    <div>
+                        <Button style={{ marginRight: '20px' }} onClick={startNewWeek} compact>
                             Start new week
                         </Button>
+                    </div>
                     <Link to='/NewProject'>
                         <Button compact >
                             <div>+</div>
